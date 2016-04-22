@@ -1,0 +1,63 @@
+h1 {
+	color: #3010a0;
+	font-family: Verdana;
+}
+
+h2 {
+	color: #3010a0;
+	font-family: Verdana;
+}
+
+.flex-all {
+	display: flex;
+	flex-direction: row;
+}
+
+.sidebar {
+    margin-right: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #e3e3ff;
+}	
+
+.flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.about {
+	margin-left: 20px;
+}
+
+.about-text {
+	background-color: #e3e3e3;
+	height: 300px;
+}
+
+.contacts {
+	margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }	
+	
+  .flex {
+    display: flex;
+	flex-direction: column;
+  }
+  
+  .about-text {
+	background-color: #e3e3e3;
+	height: 100%;
+  }
+  
+  .contacts {
+	margin-left: 0px;
+  }
+  
+  .about {
+	margin-left: 0px;
+  }
+}

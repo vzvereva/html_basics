@@ -2,16 +2,40 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
 		<title>My homepage for HTML workshop</title>
 	</head>
 	<body>
 		<h1>Welcome to my awesome homepage</h1>
-		<h2>My photo</h2>
-		<p><img width="200" alt="My photo should be here" src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/543510_219143418213908_1264348433_n.jpg?oh=4f804c015cdfc44c48cea7d1c5caf1bc&oe=57B15BF3"/></p>
-		<h2>Contacts</h2>
-        <ul>
-			<li><a href="https://www.facebook.com/vera.zvereva.5">Facebook</a></li>
-			<li><a href="https://pl.linkedin.com/in/verazvereva">LinkedIn</a></li>
-		</ul>
+		<div class="flex-all">
+			<div class="sidebar">
+				<h2>Contents</h2>
+				<ul class="ulist">
+					<li><a href="#photo">Photo</a></li>
+					<li><a href="#about">About me</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="flex">
+				<div id="photo" class="photo">
+					<h2>My photo</h2>
+					<p><img width="200" alt="My photo should be here" src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/543510_219143418213908_1264348433_n.jpg?oh=4f804c015cdfc44c48cea7d1c5caf1bc&oe=57B15BF3"/></p>
+				</div>
+				<div id="about" class="about">
+					<h2>About me</h2>
+					<div class="about-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div id="contacts" class="contacts">
+					<h2>Contacts</h2>
+					<ul class="ulist">
+						<li><a href="https://www.facebook.com/vera.zvereva.5">Facebook</a></li>
+						<li><a href="https://pl.linkedin.com/in/verazvereva">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
